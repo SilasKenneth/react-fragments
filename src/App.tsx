@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 
@@ -24,7 +23,7 @@ class App extends React.Component
      return <React.Fragment key={developer.login}>
        <td>{developer.login}</td>
        <td>{developer.id}</td>
-       <td><img src={developer.avatar_url} /></td>
+       <td><img src={developer.avatar_url} alt={developer.login}/></td>
        <td> </td>
      </React.Fragment>
    }
